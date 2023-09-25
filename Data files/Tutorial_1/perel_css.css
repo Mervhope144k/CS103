@@ -1,0 +1,29 @@
+                                                                                            @charset "windows-1252";	
+
+
+   
+body 		{font-family: arial; background : #cccccc;  color : #333333  }
+
+                                                          
+.description{ font-size : small
+			}
+			
+.note 		{color: #006633;
+			font-size: 11pt
+			}
+#announcemt {color: #660000;
+			font-size: xx-large;
+			text-decoration: none
+	     	}
+			
+#link_home	{color: #663333;
+			font-size: small
+			}	
+			
+#new_updt	{color: #cc0000;
+			font-size: x-small;
+			font-family: garamond
+			}
+#test-practice {
+			list-style-type: none
+            }

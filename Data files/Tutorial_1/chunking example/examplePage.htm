@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title> examplePage - HTML &amp; CSS</title>
+<style type="text/css">
+body {
+	 margin: 5% 33% 10%  30%;
+	 border: 10px groove gainsboro 
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 class="title">
+   HTML &amp; CSS</h1>
+               
+               <ul class="w3c_toc">
+                  <li class="toc_prefix">On this page </li>
+                  <li>
+                     <a href="#whathtml">what is HTML</a>
+                  </li>
+                  <li>
+                     <a href="#whatcss">what is css</a>
+                  </li>
+                  <li>
+                     <a href="#webfonts">what is webfonts</a>                    
+                  </li>
+                  <li>
+                     <a href="#examples">examples</a>
+                  </li>
+                  <li>
+                     <a href="#moreinfo">more info</a>
+                  </li>
+                  <li>
+                     <a href="#pressreleases">recent press releases</a>
+                  </li>
+                  <li>
+                     <a href="#specifications">current status of specifications</a> and <a href="#w3c_groups">groups</a>
+                  </li>
+               </ul>
+               
+               <!-- Generated from data/body_with_context.php, ../../smarty/{body_with_context.tpl} -->
+               
+               <div id="w3c_content_body">
+                  
+                  <div class="line">
+                     
+                     <div class="unit size3on4">
+
+			<p class="intro tPadding">
+			   <a href="/html/">HTML</a> (the Hypertext
+			   Markup Language) and <a href="/Style/CSS/">CSS</a> (Cascading Style Sheets) are two
+			   of the core technologies for building Web
+			   pages. HTML provides the <em>structure</em> of the page, CSS the
+			   (visual and aural) <em>layout,</em> for a
+			   variety of devices. Along with <a href="graphics">graphics</a> and <a href="script">scripting</a>, HTML and CSS
+			   are the basis of building Web pages and
+			   <!-- a href="webapps" -->Web
+			   Applications<!-- /a -->. Learn more below
+			   about:
+                        </p>
+                                         
+                        
+                        <h2 id="whathtml">What is HTML?</h2>
+                                                
+                        <p>
+			   <a href="/html/">HTML</a> is the language
+			   for describing the structure of Web
+			   pages. HTML gives authors the means to:
+			</p>
+
+                        <ul class="show_items">
+                           <li>
+			      Publish online documents with headings,
+			      text, tables, lists, photos, etc.
+			   </li>
+                           <li>
+			      Retrieve online information via
+			      hypertext links, at the click of a
+			      button.
+			   </li>
+                           <li>
+			      Design forms for conducting transactions
+			      with remote services, for use in
+			      searching for information, making
+			      reservations, ordering products, etc.
+                           </li>
+                           <li>
+			      Include spread-sheets, video clips,
+			      sound clips, and other applications
+			      directly in their documents.
+			   </li>
+                        </ul>
+
+                        <p>
+			   With HTML, authors describe the structure
+			   of pages using <em>markup.</em> The
+			   <em>elements</em> of the language label
+			   pieces of content such as &#x201C;paragraph,&#x201D;
+			   &#x201C;list,&#x201D; &#x201C;table,&#x201D; and so on.
+                        </p>
+
+
+
+                        <h2>What is XHTML?</h2>
+
+
+                        <p>
+			   XHTML is a variant of HTML that uses the
+			   syntax of <a href="../xml/core">XML</a>,
+			   the Extensible Markup Language. XHTML has
+			   all the same elements (for paragraphs,
+			   etc.) as the HTML variant, but the syntax
+			   is slightly different. Because XHTML is an
+			   XML application, you can use other XML
+			   tools with it (such as <a href="../xml/transformation">XSLT,</a> a
+			   language for transforming XML content).
+                        </p>
+
+
+
+                        <h2 id="whatcss">What is CSS?</h2>
+
+
+                        <p>
+			   <a href="/Style/CSS/">CSS</a> is the
+			   language for describing the presentation of
+			   Web pages, including colors, layout, and
+			   fonts. It allows one to adapt the presentation
+			   to different types of devices, such as
+			   large screens, small screens, or
+			   printers. CSS is independent of HTML and
+			   can be used with any XML-based markup
+			   language. The separation of HTML from CSS
+			   makes it easier to maintain sites, share
+			   style sheets across pages, and tailor pages
+			   to different environments. This is referred
+			   to as the <em>separation of structure (or:
+			   content) from presentation.</em>
+                        </p>
+
+
+                        <h2 id="webfonts">What is WebFonts?</h2>
+				    <p>
+				WebFonts is a technology that enables people to use fonts on
+				demand over the Web without requiring installation in the operating system.
+				W3C has experience in downloadable fonts through HTML, CSS2, and SVG. Until
+				recently, downloadable fonts have not been common on the Web due to the lack
+				of an interoperable font format. The WebFonts effort plans to address that
+				through the creation of an industry-supported, open font format for the Web
+				(called "WOFF").
+				    </p>
+
+                        <h2 id="examples">Examples</h2>
+
+
+                        <p>
+			   The following very simple example of a
+			   portion of an HTML document illustrates how
+			   to create a link within a paragraph. When
+			   rendered on the screen (or by a speech
+			   synthesizer), the link text will be &#x201C;final
+			   report&#x201D;; when somebody activates the link,
+			   the browser will retrieve the resource
+			   identified by
+			   &#x201C;http://www.example.com/report&#x201D;:
+                        </p>
+
+<pre>
+<p class="moreinfo">For more information see the
+<a href="http://www.example.com/report">final report</a></p>
+</pre>
+
+                        <p>
+			   The <code>class</code> attribute on the
+			   paragraph's start tag (&#x201C;&lt;p&gt;&#x201D;) can be
+			   used, among other thing, to add style. For
+			   instance, to italicize the text of all
+			   paragraphs with a class of &#x201C;moreinfo,&#x201D; one
+			   could write, in CSS:
+                        </p>
+
+<pre>p.moreinfo { font-style: italic }</pre>
+
+                        <p>
+			   By placing that rule in a separate file,
+			   the style may be shared by any number of
+			   HTML documents.
+                        </p>
+
+
+
+                        <h2 id="moreinfo">More Information</h2>
+
+
+                        <p>
+			   For more information about HTML and CSS,
+			   see <a href="/2002/03/tutorials.html#webdesign_htmlcss">tutorials for HTML and CSS</a>.
+                        </p>
+
+			<p>
+			   For advanced document transformations and
+			   layout beyond CSS, see <a href="../xml/transformation">XSLT</a>
+			   &amp; <a href="../xml/publishing">XSL-FO.</a>
+			</p>
+                        
+                        <div id="pressreleases">
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+
+
+How to get the file extensions to show
+
+How to do in Windows 10:
+1) Open Windows Explorer (the Folder Icon):
+2) Click on the View Tab and check the box for File name extensions. 
+
+How to do in Windows 11:
+1) Open Windows Explorer (the Folder Icon)
+2) Click on the menu item View, mouse down to Show and select "File name Extensions" 
+
+
+How to do on a Mac:
+1) Open the Finder on your Mac
+2) Choose Finder > Settings (or Preferences), then click Advanced. 
+3) Select "Show all filename extensions."
+  
+Note that on the Mac even after you do the steps above you may still see some filenames with extensions showing and some not. Why? Because one can set an individual file to show or hide its extension. You can verify this for a single file by selecting it and going to File > Get Info and look to see if the "Hide Extension" checkbox is checked or not. To get all filenames to show extensions, select all the files in your current locaiton, go to File > Get Info and turn the "File Extensions" on.
