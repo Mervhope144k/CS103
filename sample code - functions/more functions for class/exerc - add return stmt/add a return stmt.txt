@@ -1,0 +1,1 @@
+Exercise: Add a return statement to func. And document.write it out outside the fcn to verify it. Adjust other code as necessary. This will include the function call statemt.

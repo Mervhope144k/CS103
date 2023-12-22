@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<!-- Created on: 3/17/2006; update 12/8/2021 -->
+<head>
+<title>Pizza order</title>
+<style>
+	form {margin: 2.5em }
+	fieldset {width: 50%}
+	</style>
+</head>
+
+
+<body>
+<form name="pizzaform" id="pizzaform" action="mailto:perel@ecc.edu" method="post">
+
+<fieldset>
+    <legend>Pizza Order</legend> 
+    <p>Required fields *</p>
+
+    <p>* Last name: <input type="text" name="LName" id="LName" size="25" maxlength="30" required="required" /></p>
+
+    <p>* Telephone: <input type="tel" name="telephone" id="telephone" size="13" maxlength="13" placeholder="(nnn)nnn-nnnn" required="required" /></p>
+
+    <p>Order type? &nbsp;
+        pickup<input type="radio" name="ordertype" id="pickup" value="pickup" selected="selected" />
+        <!-- the name attribute is a meaningful name for the GROUP of radio buttons -->
+
+        delivery<input type="radio" name="ordertype" id="delivery" value="delivery" />
+    </p>
+
+    <p>Extra toppings $1.50 each<br />
+        <input type="checkbox" name="mushrooms" id="mushrooms" /> mushrooms<br />
+        <input type="checkbox" name="pepperoni" id="pepperoni" />pepperoni <br />
+    </p>
+
+    <p>Pizza of the month: <br />
+
+    <select name="pizzaOfMonth" id="pizzaOfMonth">
+	       <option value="Jan">January - White pizza</option>	 
+	       <option value="Feb">February - Mushroom pizza</option>	
+        <option value="Mar">March - Buffalo chicken wing pizza</option>
+	       <option value="Apr">April - Anchovy pizza</option>
+				</select>
+    </p>
+
+    <p>Soft drink: <br />
+        <select name="softDrinks" id="softDrinks" size="1">
+	           <option value="coca cola">Coca Cola</option>
+	           <option value="pepsi">Pepsi</option>
+	           <option value="7up">7up</option>
+        </select>
+    </p>
+
+    <p>
+	        How was your pizza?<br />
+	        <input type="checkbox" name="survey" value="poor" />poor<br />
+	        <input type="checkbox" name="survey" value="fair" />fair<br />
+	        <input type="checkbox" name="survey" value="excellent" />excellent
+    </p>
+
+
+     Comments: <br />
+     <textarea name="comments" id="comments" cols="35" rows="6" wrap="soft"></textarea>
+
+</fieldset>
+
+ <input type="submit" value="Submit order"> &nbsp;
+	<input type="reset" value="Clear" />                                  
+	
+</form>
+
+</body>
+</html>

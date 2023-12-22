@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Untitled 1</title>
+</head>
+
+<body>
+<script>
+
+function fun(r){
+	var K = r*r; 
+	return K;
+}
+
+alert(fun(3));
+alert(K);  	// K is not accessible because it is a local variable 
+			// to the function fun(r)  Try taking off the var in the fcn
+			// and rerun the page. This makes K a global variable
+			//
+			// global variable - you can access its value from anywhere 
+			// -- from inside the function or from outside, in the main function
+			//
+			// local variable - you can access its value from only inside the function
+</script>
+
+</body>
+
+</html>

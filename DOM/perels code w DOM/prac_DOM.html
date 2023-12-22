@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!-- Created on: 12/17/2009 Updated 12/13/2022  -->
+<style>
+    body {margin-left: 5%;}
+	   fieldset {width: 50%}
+</style>
+<head>
+    <title>Object reference Practice</title>
+    <script>
+    //picture swap functions
+    function swapToAnn(){
+		      document.getElementById("katrinaId").src="annenberg.jpg";	
+    }
+    function swapToKat(){
+        document.images.katrinaId.src="katrina_1.bmp";
+    } 
+    </script>
+</head>
+
+<body>
+<!--***********  form here ************* -->
+    <h1>Address Book with Image</h1>
+    <h2>Practice referencing document objects</h2>
+    
+	<form name="addressForm" id="addressForm" action="aaa.bbb\cgi-bin\progx.exe" method="post"> 
+		<fieldset>
+            Enter your name:
+            First: <input type="text" name="First" id="First" size="24" maxlength="30" value="Type first name here" />  
+            <br /><br />
+            Address: <input type="text" name="Address" id="Address" size="40" maxlength="6" />
+            <br /><br />
+             City: <input type="text" name="City" id="City" size="20" maxlength="45" />
+            <br /><br />
+            State: <input type="text" name="State" id="State" value="SS" size="2" maxlength="2" />  
+            <br /><br />
+		</fieldset>
+		<input type="submit"  name="submitButton" value="Submit" />&nbsp;
+		<input type="reset" name="resetButton" value="Clear" />
+	</form>														
+	<br /><br /><br />	  
+    <!--*********** image here ************* -->
+    <!-- ********** event handler ********** -->
+    <img onmouseover="swapToAnn();" onmouseout="swapToKat();" src="katrina_1.bmp"
+		name="katrina" id="katrinaId" border="2" width="200" height="150" />	  
+
+	<script>
+    /********** getElementById method *********/
+        x = document.getElementById("addressForm").method;
+		alert("The method for this form is " +  x);
+			
+		y = document.getElementById("City").maxLength;
+		alert("The maxlength of the City field is " + y);	
+       </script>
+</body>
+</html>

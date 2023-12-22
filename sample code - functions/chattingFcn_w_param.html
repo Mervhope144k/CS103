@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+   <title>chatting-fcn-w-parameter</title>
+<script>
+
+// the function defn:
+function chatting(name) {
+   alert("Hello there " +  name);
+   x = confirm("Are you hungry?  ");  // confirm statement is like a prompt statement
+                                       // where your only response is YES (OK) or NO (Cancel)
+  
+   if (x == true) alert("Eat something");
+   if (x == false) alert("Then don't eat anything.");
+}
+
+// the function call
+N = prompt("enter your name: ");
+chatting(N);
+
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

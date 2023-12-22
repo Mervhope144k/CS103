@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Dates code</title>
+</head>
+
+<body>
+<script>
+ 
+document.write("Store the date, May 7, 2013, (and the time 14:45:13)<br />in a variable, and then display it: <br />");  
+theDate = new Date(2013, 4, 7, 14, 45, 13);
+theMonth = theDate.getMonth();
+theDay  = theDate.getDate();  
+theYear = theDate.getFullYear();
+
+// Add a 1 to the month for us humans to read.
+document.write((theMonth + 1) + "/" + theDay + "/"  + theYear);
+ 
+</script>
+
+</body>
+
+</html>

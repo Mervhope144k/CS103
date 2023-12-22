@@ -1,0 +1,83 @@
+My "Reference Chart for Form Elements" Handout
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+attributes     
+abbrevs:  t = type, i = id, n = name, v = value
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+FORM  -- use <form> 
+ni   other: action, method
+
+example:
+<form name="myForm" id="myForm" action="mailto:perel@ecc.edu" method="post"></form>
+
+___________________________________________________________________________________
+TEXTBOX  -- use <input>
+tni   other:  size, maxlength (= max # characters)
+    n and i name the field
+    v usually omitted; it is what the user types into the box; 
+    t omitted when type="text" is the default
+
+EXAMPLE
+    the following renders: Last Name [_________________]
+    ex: Last Name: <input type="text" name="lastName" id ="lastName" />
+    
+___________________________________________________________________________________
+RADIO -- use <input>
+tniv  other: checked="checked" footnote1
+    n – names the field (name for the group of option buttons)
+    i and v name each individual field value
+ 
+EXAMPLE of 2 radio buttons
+    the following renders: Sex:  (_)male  (_)female
+    
+    Sex:
+    <input type="radio" name="sex" id="male" value="male" /> male
+    <input type="radio" name="sex" id="female" value="female" /> female
+    (The book leaves the value attribute off.)
+    
+___________________________________________________________________________________
+CHECKBOX  -- use <input>
+tni  other: checked="checked" footnote1
+    n and i name the field (where each checkbox is a field)
+    v is usually omitted 2
+
+EXAMPLE
+    the following renders: [_] Red
+    <input type="checkbox"  name="red" id="red" /> Red
+    (value= "On" by default)
+    
+___________________________________________________________________________________
+SUBMIT and RESET  -- use <input>
+tv 
+    v is text that appears on button
+    
+EXAMPLE
+    the following renders as a button with the word Submit (or Clear) on it:
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Clear" />
+    
+___________________________________________________________________________________
+SELECTION list  -- use <select> and <option>    
+in the select tag:  ni
+    n and i– name the field (name for the list of options)
+    other: size, multiple="multiple" 3, selected="selected"1 (size is the # of list items showing)
+in the option tag:  v
+    v- names each individual field value (each list option) 
+
+EXAMPLE:
+    the following renders as a drop down list:
+    <select name="states" id="states">
+        <option value="NY">NY</option>
+        <option value="FL">FL</option>
+        etc.
+    </select>
+
+___________________________________________________________________________________
+TEXTAREA -- use <textarea>
+ni  other:  rows, cols
+    n and i name the field;
+    rows =# of lines (default 3),
+    cols =chars (default  20)
+
+    The following renders as a big box for typing, say, open comments in it:
+    <textarea name="comments" id="comments"></textarea>

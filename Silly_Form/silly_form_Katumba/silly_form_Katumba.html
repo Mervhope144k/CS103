@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    fieldset {
+      width: 50%;
+    }
+    /* Additional styles */
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: calc(100% - 12px);
+      padding: 6px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 8px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #0056b3;
+    }
+    /* Horizontal layout adjustments */
+    .horizontal-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .horizontal-group label,
+    .horizontal-group input[type="text"],
+    .horizontal-group select,
+    .horizontal-group textarea {
+      flex: 1 1 auto;
+      margin-bottom: 10px;
+    }
+    .horizontal-group .col-6 {
+      flex-basis: calc(50% - 5px);
+    }
+    /* Square radio buttons */
+    input[type="radio"].square {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #007bff;
+      border-radius: 0;
+      outline: none;
+    }
+    input[type="radio"].square:checked {
+      background-color: #007bff;
+    }
+    /* Round option buttons */
+    input[type="radio"].round {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #007bff;
+      border-radius: 50%;
+      outline: none;
+    }
+    input[type="radio"].round:checked {
+      background-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+<form name="SillyForm" id="SillyForm" action="mailto:your_email@ecc.edu" method="post">
+  <fieldset>
+    <legend>Silly Form</legend>
+    <div class="horizontal-group">
+      <div class="col-6">
+        <label for="firstName">First Name*:</label>
+        <input type="text" id="firstName" name="firstName" size="20" maxlength="30" required>
+      </div>
+      <div class="col-6">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" size="20" maxlength="30">
+      </div>
+    </div>
+
+    <div class="horizontal-group">
+      <div class="col-4">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" size="10" maxlength="13">
+      </div>
+      <div class="col-4">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" size="2" maxlength="2">
+      </div>
+      <div class="col-4">
+        <label for="zipCode">Zip code:</label>
+        <input type="text" id="zipCode" name="zipCode" size="10" maxlength="10">
+      </div>
+    </div>
+
+    <label>Email address:</label>
+    <input type="email" id="email" name="email" required><br />
+
+    <label>Favorite Sport:</label>
+    <div class="horizontal-group">
+      <label for="baseball">Baseball</label>
+      <input type="radio" id="baseball" name="favoriteSport" value="baseball" class="square">
+      <label for="football">Football</label>
+      <input type="radio" id="football" name="favoriteSport" value="football" class="square">
+      <label for="hockey">Hockey</label>
+      <input type="radio" id="hockey" name="favoriteSport" value="hockey" class="square">
+    </div>
+
+    <label>College Year:</label>
+    <div class="horizontal-group">
+      <label for="freshman">Freshman</label>
+      <input type="radio" id="freshman" name="collegeYear" value="freshman" class="round">
+      <label for="sophomore">Sophomore</label>
+      <input type="radio" id="sophomore" name="collegeYear" value="sophomore" class="round">
+      <label for="junior">Junior</label>
+      <input type="radio" id="junior" name="collegeYear" value="junior" class="round">
+      <label for="senior">Senior</label>
+      <input type="radio" id="senior" name="collegeYear" value="senior" class="round">
+    </div>
+
+    <label for="favoriteFood">Favorite Food:</label>
+    <select id="favoriteFood" name="favoriteFood">
+      <option value="yogurt">Yogurt</option>
+      <option value="pizza">Pizza</option>
+      <option value="avocadoes">Avocadoes</option>
+    </select><br />
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50">Please let us know your comments.</textarea><br />
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+  </fieldset>
+</form>
+
+</body>
+</html>

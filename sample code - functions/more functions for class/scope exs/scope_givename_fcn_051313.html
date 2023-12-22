@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+
+function give_name() {
+  var name = prompt("Type your name ");
+  return name;
+  
+}
+
+/*  comment or uncomment out the 3 variations below: */
+
+give_name();
+
+alert(name);  	// On 5-13-13 to illustrate that w/o name delcared with
+				// var  in fcn, the variable name is global --
+				// meaning its value is accessible from anywhere inside of fcn,
+				// or outside the fcn -- in the main program area
+
+/*
+
+x = give_name();  	// try this code with and without a return statemt in funct above
+alert("Hi " + x);
+
+*/
+/* line below is essentially identical to previous 2 lines when a return is included in the fcn */
+
+/*
+alert("Hi " + give_name());
+*/
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables CSS 1</title>
+    <style>
+    table {
+        border: 5px solid purple;
+        padding: 19px
+      }
+    th, td {
+        border: 2px solid green;
+        padding: 10px 15px;
+        vertical-align: bottom        
+    }
+    .book-title, .publisher {
+        display: block
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Book and authors</caption>
+        <thead>
+        <tr>           
+            <th scope="col">Author</th>
+            <th scope="col">Title and Publisher</th>
+            <th scope="col">Copyright Date</th> 
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Carl Bernstein</td>
+            <td><span class="book-title">A Woman in Charge: The Life of Hillary Clinton</span>
+            <span class="publisher">Vintage Books</span></td>
+            <td>2007</td>         
+        </tr>
+        <tr>
+            <td>Ken Adler</td>
+            <td><span class="book-title">Engineering the Revolution: Arms and Enlightenment in France, 1763-1815 </span>
+            <span class="publisher">University of Chicago Press</span></td>
+            <td>1997</td>
+        </tr>
+        <tr>
+            <td>Ken Adler</td>
+            <td><span class="book-title">A Measure of All Things</span>
+            <span class="publisher">Simon and Schuster</span></td>
+            <td>2002</td>
+        </tr>            
+        <tr>
+            <td>Benjamin Carson</td>
+            <td><span class="book-title">Take the Risk: Learning to Identify, Choose, and Live with Acceptable Risk</span>
+            <span class="publisher">Zondervan</span></td>
+            <td>2008</td>
+        </tr>
+        </tbody>                
+        <tfoot>
+        <tr>
+            <td colspan="3">Reading List (in tfoot area)</td>
+        </tr>
+        </tfoot>    
+    </table>
+</body>
+</html>

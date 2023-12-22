@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<!-- Created on: 12/19/2006 updtd 2/10/2022-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>add2numsFcn</title>
+<script>
+    // Better to run code in browser and not Komodo Edit Tab
+    
+    // First function needs parseInt and the second doesn't.
+    // That is because the first function uses the prompt statement, followed by addition.
+    
+    function add2nums(){
+    
+        x = prompt("Enter number 1 of 2: ", 0);
+        y = prompt("Enter number 1 of 2: ", 0); 
+        document.write("x = " + x + "   y = " + y);
+        document.write("<br />");
+        z = parseInt(x) + parseInt(y);		
+        document.write("THEIR SUM IS ... " + z);	
+        
+        document.write("<br />");document.write("<br />");
+    }
+    
+    add2nums();  // call the function
+    
+    /*  a variation of above fcn ****************** */
+    
+    function add2nums_prime(){
+    
+        x = 8;  y = 3;
+        document.write("x = " + x + "   y = " + y);
+        document.write("<br />");
+        z = x + y;  // prompt thus no parseInt necessary
+        document.write("their sum is " + z);	
+        document.write("<br />");document.write("<br />");
+        }
+    
+    add2nums_prime(); // call the function
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

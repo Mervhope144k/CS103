@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>cutnpaste JS2</title>
+    <style>
+        body {
+           margin: auto; width: 80%;        
+        }
+        .enhancement {
+            width: 600px;
+            background-color: beige
+        }
+        .dynamic {
+           font-family: Arial, sans-serif;
+            font-weight: bold
+        }
+        section {
+            margin-bottom: 5%
+            }
+    </style>
+</head>
+
+<body>
+    <h1>Example of cut-n-paste JavaScript</h1>
+
+    <p class="enhancement">This is an example of cut-n-paste JavaScript called "Random iframe content". I cut-n-pasted it from <span class="dynamic">www.dynamicdrive.com</span>. At this webpage, go to <span class="dynamic">Home > Dynamic Content > Iframe and Ajax.</span> Select the "Random iframe content".</p>
+    <p>Refresh this page repeatedly to see new content below!</p>
+    <script language="JavaScript1.2">
+
+        //Random iframe content- (c) Dynamic Drive (www.dynamicdrive.com)
+        //For full source code, and Terms Of use, visit http://dynamicdrive.com
+        //This credit MUST stay intact for use
+
+        var ie=document.all&&navigator.userAgent.indexOf("Opera")==-1
+        var dom=document.getElementById&&navigator.userAgent.indexOf("Opera")==-1
+
+        //Specify IFRAME display attributes
+        var iframeprops='width=490 height=330 marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="1" scrolling="yes"'
+        // 130, 130, 0, 0, 00, 1, no
+        //Specify random URLs to display inside iframe
+        var randomcontent=new Array()
+        randomcontent[0]="blog11.htm"
+        randomcontent[1]="history.htm"
+        randomcontent[2]="decimal_sys.html"
+        randomcontent[3]="http://www.dynamicdrive.com"
+        randomcontent[4]="2537Rule.pdf"
+
+        //No need to edit after here
+        if (ie||dom)
+        document.write('<iframe id="dynstuff" src="" '+iframeprops+'></iframe>')
+
+        function random_iframe(){
+        if (ie||dom){
+        var iframeobj=document.getElementById? document.getElementById("dynstuff") : document.all.dynstuff
+        iframeobj.src=randomcontent[Math.floor(Math.random()*randomcontent.length)]
+        }
+        }
+
+        window.onload=random_iframe
+    </script>
+
+
+</body>
+</html>

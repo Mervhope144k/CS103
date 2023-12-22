@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>areaFcn_return</title>
+</head>
+
+<body>
+<script>
+
+// A function without a return statement:
+function triArea() {
+	b = 2;
+	h = 7;
+	A = 1/2 * b * h;
+	document.write("Area of tri is " + A);
+}
+
+triArea();
+document.write("<br />");
+document.write("<br />");
+
+// A function with a return statement:
+function triArea2(b, h) {
+	return A = 1/2 * b * h;
+}
+
+// call the function twice
+x = triArea2(4, 7);
+document.write("Area of tri is " + x);
+document.write("<br />");
+//alternately ...
+document.write( "Area of tri is " + triArea2(4,7) );
+
+</script>
+</body>
+
+</html>

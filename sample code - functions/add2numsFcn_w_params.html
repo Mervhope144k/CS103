@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<!-- Created on: 12/19/2006 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>add2numsFcn_w_params</title>
+<script>
+ 
+    // Better to run code in browser and not Komodo Edit Tab 
+    function add2nums(x, y){
+    
+        document.write("x = " + x + "   y = " + y);
+        document.write("<br />");
+        var z = parseInt(x) + parseInt(y);	
+        document.write("their sum is " + z);	
+        document.write("<br />");document.write("<br />");
+        return z;
+    /*
+        In the above, parseInt is necessary just for addition. It has to do 
+        with concatenation and addition both using the + sign, which is 
+        referred to as "overloading". The "+" sign is overloaded.
+        Also has to do with a value prompted for, becoming a string.
+    */
+        }
+        
+    
+    //main with 2 function calls
+    var a = prompt("Enter number 1 of 2: ", 0);
+    var b = prompt("Enter number 2 of 2: ", 0);
+    
+    add2nums(a, b); // function call where user enters the inputs for the args
+    add2nums(5, 7);	 // function call with actual numbers as arguments
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

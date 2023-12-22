@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>firstDates</title>
+</head>
+<body>
+<script>
+
+sallyDate = new Date(); // with no param values its todays date
+
+// access and output:
+
+// output month , date and year...
+
+/* Note that for JavaScript, as an example, the month of April is 3.
+ * That is, Jan = 0, Feb = 1, Mar = 2, and so on. Counting starts with 0.
+ * But for us humans, we start counting the months with 1. 
+ * So, for (April we would write a 4. The following statement
+ * will adjust for this so that we see a 4 instead of a 3 for April.
+ */
+document.write("Today's date: <br />The month is " + (sallyDate.getMonth() + 1) );  
+document.write(",   ");
+
+document.write("<br />The day is " + sallyDate.getDate() );
+document.write(",   ");
+document.write("<br />The year is " + sallyDate.getFullYear() );
+document.write("<br /> <br />Recall, as an example, that April is 3 in JavaScript <br />");
+document.write("because we start counting January as 0 in JavaScript.<br />");
+
+
+// let's change the values now with sets:
+document.write("<br /><br />Let's change some values in the previous date variable ");
+document.write("<br /> using the set method to display Dec 1, 2023.");
+sallyDate.setMonth(11); 
+sallyDate.setDate(1); // Date means the number of the month
+
+document.write("<br /><br />");
+
+// output month , date and year again...
+document.write("Month is " + (sallyDate.getMonth() + 1) );  
+document.write(",   ");
+//note 3 is april. that is 0 = jan, 1 = feb, 2 = mar, 3 = apr
+document.write("Day is " + sallyDate.getDate() );
+document.write(",   ");
+document.write("Year is " + sallyDate.getFullYear() )
+
+
+//and another date:
+document.write("<br /><br />");
+
+document.write("<br />Let's create a new date for July 4, 1776");
+document.write("<br /> and display it.");
+henryDate = new Date(1776, 6, 4, 14, 15, 1);
+// output month , date and year again..
+document.write("<br /><br />");
+document.write("Month is " + (henryDate.getMonth() + 1) );  
+document.write(",   ");
+//note 3 is april. that is 0 = jan, 1 = feb, 2 = mar, 3 = apr
+document.write("Day is " + henryDate.getDate() );
+document.write(",   ");
+document.write("Year is " + henryDate.getFullYear() )
+document.write(",   ");
+document.write("Hour is " + henryDate.getHours() )
+
+</script>
+</body>
+</html>

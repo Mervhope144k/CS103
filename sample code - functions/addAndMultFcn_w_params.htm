@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>addAndMultFcn_w_params</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+
+<body>
+<script>    
+// Better to run code in browser and not Komodo Edit Tab 
+ 
+    function addAndMult(x, y){
+    
+    document.write("x = " + x + "   y = " + y);
+    document.write("<br />");
+    var z = parseInt(x) + parseInt(y);
+    var k = x*y;	
+    document.write("their sum is " + z);	
+    document.write("<br />");
+    document.write("their prod is " + k);	
+    document.write("<br />");document.write("<br />");
+    /*
+        In the above, parseInt is necessary just for addition. It has to do 
+        with concatenation and addition both using the + sign, which is 
+        referred to as "overloading". The "+" sign is overloaded.
+        Also has to do with a value prompted for, becoming a string.
+    */
+    }
+
+    //main with 2 function calls
+    var a = prompt("Enter number 1 of 2: ", 0);
+    var b = prompt("Enter number 2 of 2: ", 0);
+    addAndMult(a, b)	    // function call where user enters the inputs for the args
+    addAndMult(5, 7);	    // function call with actual values as arguments
+
+</script>
+
+</body>
+</html>
